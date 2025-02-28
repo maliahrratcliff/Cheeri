@@ -20,7 +20,7 @@
     background-color: transparent;
     color: #fff;
     padding: 8px 20px;
-    border: 1px solid var(--primary);
+    border: 2px solid var(--primary);
     transition: all 0.3s ease-out;
 }
 
@@ -31,12 +31,13 @@
 
 .btn--large {
     padding: 12px 20px;
-    font-size: 2opx;
+    font-size: 25px;
 }
 
 .btn--medium:hover, 
 .btn--large:hover {
-    background: #fff;
-    color: #242424;
+    background: #ffff;
+    color: #594157;
+    /* periwinkle: C9C9EE */
     transition: all 0.3s ease-out;
 }
