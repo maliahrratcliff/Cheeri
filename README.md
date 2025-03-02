@@ -13,7 +13,7 @@ We curate beautifully themed dinner party boxes, packed with everything you need
 ✔️ Secure Payments – Integrated with Stripe for seamless checkout (planned).   
 
 ### ✨ Tech Stack
-Frontend: React (Next.js)  
+Frontend: React 19   
 Backend: Node.js | PostgreSQL  
 Authentication: NextAuth.js (planned)  
 Payment Processing: Stripe (planned)  
