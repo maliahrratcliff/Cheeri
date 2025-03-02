@@ -8,7 +8,8 @@
 .home,
 .products,
 .about,
-.sneak-peeks {
+.sneaks ,
+.connect{
   display: flex;
   height: 90vh;
   align-items: center;
@@ -17,7 +18,7 @@
 }
 
 .products {
-  background-image: url('../public/logo192.png');
+  background-image: url('../public/images/CheeseBoard.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,16 +27,25 @@
 }
 
 .about {
-  background-image: url('../public/logo192.png');
+  background-image: url('../public/images/Tomatoes.jpg');
   background-position: center;
-  background-size: fill;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
 }
 
-.sneak-peeks {
-  background-image: url('../public/logo192.png');
+.sneaks {
+  background-image: url('../public/images/Board.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.connect {
+  background-image: url('../public/images/Bread.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

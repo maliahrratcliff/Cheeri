@@ -1,0 +1,143 @@
+.cards {
+    padding: 4rem;
+    background: #fff;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .cards--container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .cards--wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+  }
+  
+.cards--item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    justify-content: space-between; /* Ensures text is visible */
+    flex: 1;
+    margin: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 300px; /* Controls card size */
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+}
+
+.cards--items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+  .cards--item--link {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    flex-direction: column;
+  }
+  
+  .cards--item--pic-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ensures enough space for the image */
+    overflow: hidden;
+}
+  
+  .fade-img {
+    animation-name: fade-img;
+    animation-duration: 2s;
+  }
+  
+  .cards--item--pic-wrap::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: -4px; /* Adjust position */
+    margin-left: 10px;
+    left: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    font-size: 12px; /* Make it more readable */
+    font-weight: 700;
+    color: #fff;
+    background: #D8BFD8; /* Add transparency */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box;
+}
+  
+  .cards--item--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures full image is displayed properly */
+}
+  .cards--item--img:hover {
+    transform: scale(1.1);
+  }
+  
+  .cards--item--info {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+}
+  
+.cards--item--text {
+    color: #252e48;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center; /* Centers text */
+    white-space: normal;
+}
+  
+
+@media only screen and (min-width: 1200px) {
+    .content__blog__container {
+      width: 84%;
+    }
+    .cards--items {
+        display: flex;
+        justify-content: center; /* Align items at the start */
+        flex-wrap: nowrap; /* Prevent wrapping on desktop */
+      }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .cards__items {
+      display: flex;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .cards--items {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: space-evenly; /* Distribute cards evenly */
+        margin: 0 1rem; /* Adjust space between cards */
+      }
+    
+      .cards--item {
+        margin-bottom: 2rem;
+        flex: 0 0 48%; /* Adjust width for mobile */
+        box-shadow: 0 4px 12px rgba(56, 125, 255, 0.17); /* Smaller shadow on mobile */
+      }
+  }
+

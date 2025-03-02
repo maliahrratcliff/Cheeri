@@ -55,4 +55,13 @@ video {
         font-size: 24px;
     }
 
+    .btn-mobile {
+        display: block;
+        text-decoration: none;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
 }
