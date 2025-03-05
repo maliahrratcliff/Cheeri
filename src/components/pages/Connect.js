@@ -1,6 +1,14 @@
 import React from 'react'
 import '../../App.css'
+import Cards from '../Cards';
+import Footer from '../Footer';
 
-export default function Connect(){
-    return <h1 className='connect'>Connect</h1>
+function Connect (){
+    return (
+        <>
+            <h1 className='connect'>Connect</h1>
+        </>
+    )
 }
+
+export default Connect;

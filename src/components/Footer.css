@@ -1,5 +1,6 @@
 .footer-container {
-    background: linear-gradient(180deg, #D8BFD8 5%, #C8A2C8 100%);
+    /* background: linear-gradient(180deg, #D8BFD8 5%, #C8A2C8 100%); */
+    background: linear-gradient(180deg, #E3D3C1 5%, #B69C85 100%);
     padding: 4rem 0 2rem 0;
     display: flex;
     flex-direction: column;

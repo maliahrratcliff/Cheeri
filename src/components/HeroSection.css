@@ -16,6 +16,8 @@ video {
     text-align: center; 
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
+    transform: translateY(-50px); /* Moves the whole container up */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Adjust heading sizes for responsiveness */
@@ -26,7 +28,7 @@ video {
 }
 
 .hero-container > p { 
-    margin: 8px 0 0 0; /* no extra unwanted spacing */
+    margin: 8px 0 0 0; 
     padding-bottom: 25px;
     color: #ffff;
     font-size: 36px;

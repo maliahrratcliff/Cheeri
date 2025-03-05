@@ -24,6 +24,8 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  transform: translateY(-80px); /* Moves the whole container up */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .about {
@@ -33,6 +35,8 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: translateY(-80px);
 }
 
 .sneaks {
@@ -42,6 +46,8 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: translateY(-80px);
 }
 
 .connect {
@@ -49,6 +55,8 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #fff;
   font-size: 100px;
+  transform: translateY(-80px);
 }

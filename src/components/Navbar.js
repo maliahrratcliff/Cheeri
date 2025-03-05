@@ -10,6 +10,9 @@ function NavBar() {
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
+    const [visible, setVisible] = useState(true);
+    let lastScrollY = window.scrollY;
+
     const showButton = () => {
         if(window.innerWidth <= 960){
             setButton(false);
@@ -24,10 +27,23 @@ function NavBar() {
 
     window.addEventListener('resize', showButton);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setVisible(false); // Hide navbar on scroll down
+      } else {
+        setVisible(true); // Show navbar on scroll up
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <>
-    <nav className="navbar">
-        <div className="navbar-container">
+    <nav className={`navbar ${visible ? "visible" : "hidden"}`}>
+      {        <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             Cheeri <i className="fa-solid fa-martini-glass-citrus"></i>
         </Link>
@@ -62,11 +78,9 @@ function NavBar() {
             </li> */}
             </ul>
             {button && <Button buttonStyle='btn--outline'>Connect</Button>}
-        </div>
+        </div>}
     </nav>
-    </>
-  )
+  );
 }
 
-export default NavBar
-// creating hero component next 
+export default NavBar;

@@ -7,6 +7,7 @@ import About from './components/pages/About.js';
 import Connect from './components/pages/Connect.js';
 import Products from './components/pages/Products.js';
 import Sneaks from './components/pages/SneakPeeks.js';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
     <Route path='/sneaks' element={ <Sneaks/> } />
     <Route path='/connect' element={ <Connect/> } />
     </Routes>
+    <Footer/>
     </Router>
       </>
   );

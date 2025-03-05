@@ -1,18 +1,28 @@
 .navbar {
-    background: linear-gradient(180deg, #C8A2C8 0%, #D8BFD8 55%, #F0E6F6 100%);
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: rgba(0, 0, 0, 0.05); 
+    backdrop-filter: blur(8px); /* Softens background */
+    /* background: linear-gradient(180deg, #C8A2C8 0%, #D8BFD8 55%, #F0E6F6 100%);  */
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    /* position: sticky;  */
+    position: fixed;
     top: 0;
     z-index: 999;
-    padding: 0; /* Ensure no padding causing the issue */
-    margin: 0; /* Ensure no margin causing the issue */
-    border: none; /* Ensure there's no border */
-    overflow: hidden; /* Prevents overflow */
+    padding: 0; 
+    margin: 0; 
+    border: none; 
+    overflow: hidden; 
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
 }
+
+.navbar.hidden {
+    transform: translateY(-100%);
+  }
   
 .navbar-container {
     display: flex;
@@ -33,6 +43,7 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
   
   .fa-typo3 {
@@ -63,11 +74,12 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
   
   .nav-links:hover {
     border-bottom: 4px solid #fff;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-out;
   }
   
   .fa-bars {
@@ -112,6 +124,7 @@
       padding: 2rem;
       width: 100%;
       display: table;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
   
     .nav-links:hover {
@@ -125,6 +138,7 @@
       top: 0;
       left: 0;
       transform: translate(25%, 50%);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
   
     .menu-icon {
@@ -163,3 +177,18 @@
       transition: 250ms;
     }
   }
+
+
+.btn--outline {
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 20px;
+    border: 2px solid var(--primary);
+    transition: all 0.3s ease-out;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn--outline:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);  /* Stronger shadow on hover */
+}
