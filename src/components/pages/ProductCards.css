@@ -109,6 +109,8 @@
 }
   
 
+
+
 @media only screen and (min-width: 1200px) {
     .content__blog__container {
       width: 84%;
@@ -140,4 +142,3 @@
         box-shadow: 0 4px 12px rgba(56, 125, 255, 0.17); /* Smaller shadow on mobile */
       }
   }
-
